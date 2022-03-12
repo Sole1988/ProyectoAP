@@ -2,7 +2,7 @@
     padding: 20px;
 }
 div{
-    background-color:rgb(253, 156, 173);
+    background-color:rgb(216, 184, 212);
     text-align: center;
 }
 
@@ -12,7 +12,8 @@ div{
         width: 25%;
         border-radius: 150%;
         box-shadow: 3px 3px 3px grey;
-        left: 35%;
+        float:left;
+        left: 5%;
         top: 600px;
     }
 }
@@ -29,6 +30,6 @@ div{
 }
 #nombre{
     font-weight: bold;
-    margin-top: 40%;
+    margin-top: 60%;
 }
    
