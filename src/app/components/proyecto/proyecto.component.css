@@ -1,0 +1,20 @@
+.row{
+    padding: 20px;
+    background-color: rgb(216, 184, 212);
+}
+
+.contenedor{
+    width: auto;
+
+}
+
+#titulo{
+    color: purple;
+    text-decoration: underline;
+    font-style: italic;
+
+}
+
+h1{
+    display: inline;
+}

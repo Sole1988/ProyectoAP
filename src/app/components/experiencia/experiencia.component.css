@@ -10,3 +10,9 @@ div{
 h1,h3{
     display: inline;
 }
+
+.titulo{
+    color: purple;
+    text-decoration: underline;
+    font-style: italic;
+}
