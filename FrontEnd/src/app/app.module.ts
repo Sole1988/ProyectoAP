@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,10 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
