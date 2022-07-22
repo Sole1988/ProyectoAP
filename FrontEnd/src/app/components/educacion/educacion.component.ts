@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
+import { Component, Injectable, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-educacion',
   templateUrl: './educacion.component.html',
   styleUrls: ['./educacion.component.css']
 })
-export class EducacionComponent implements OnInit {
+@Injectable({
+  providedIn: 'root'
+})
 
-  constructor() { }
+export class EducacionComponent {
 
-  ngOnInit(): void {
-  }
 
+
+  constructor() {}
+
+  
 }
+  
+    
+  

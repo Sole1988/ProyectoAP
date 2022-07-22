@@ -1,20 +1,27 @@
- <div class="row">
-     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-         <img src="../../../assets/fotoPerfil.jpg" class="img-fluid" id="fotodeperfil">
-   
+  <div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+      <img src="../../../assets/fotoPerfil.jpg" class="img-fluid" id="fotodeperfil">
     </div>
-<br>
-
-  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <p  id="nombre">{{Usuario.nombre}} {{Usuario.apellido}}</p>
-    <p><b>Full Stack Developer</b></p>
   </div>
+    <br>
+
+    <div class="nombre">
+      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+      <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+    </div>
+    <div class="titulo"></div>
+    <p><b>{{persona.titulo}}</b></p>
+    </div>
 
 
-  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+  <div class="descripcion">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <span>
-        <h1 id="titulo">Acerca de mí</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore illum officiis commodi laboriosam, sequi corrupti soluta autem, totam saepe consequuntur excepturi perspiciatis magni. Perspiciatis reiciendis mollitia inventore dolores iusto quibusdam.</p>
+      <h1>Acerca de mí</h1>
+      <p id="descripcion">{{persona.descripcion}}</p>
     </span>
   </div>
-</div>
+  </div>
+
+

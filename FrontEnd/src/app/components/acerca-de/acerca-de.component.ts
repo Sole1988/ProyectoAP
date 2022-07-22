@@ -1,8 +1,9 @@
 
-import { ThisReceiver } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
-import { Usuario } from 'src/app/model/usuario';
-import { UsuarioService } from 'src/app/service/usuario.service';
+
+import { Component, Injectable, OnInit } from '@angular/core';
+import { Persona } from 'src/app/model/Persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
+
 
 
 
@@ -11,15 +12,17 @@ import { UsuarioService } from 'src/app/service/usuario.service';
   templateUrl: './acerca-de.component.html',
   styleUrls: ['./acerca-de.component.css']
 })
-export class AcercaDeComponent implements OnInit {
 
-  Usuario: Usuario = new Usuario("","","","","",);
+
+export class AcercaDeComponent implements OnInit {
+persona: Persona = new Persona("","","","","");
+  
   
 
-  constructor(public UsuarioService: UsuarioService) { }
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.UsuarioService.getUser().subscribe(data =>{this.Usuario = data})
+    this.personaService.getPersona().subscribe(data => {this.persona = data})
   }
 
 }
